@@ -1,0 +1,66 @@
+
+Copy The labs folder to C:\xampp\htdocs
+
+
+----------------------------------------------------------------------
+open Shell from XAMPP program
+
+cd mysql\bin 
+
+mysql -u root -p
+
+----------------------------------------------------------------------
+
+CREATE DATABASE test;
+
+USE test;
+
+CREATE TABLE comments (
+    uname VARCHAR(255),
+    comment TEXT,
+    link VARCHAR(255)
+);
+
+
+INSERT INTO comments (uname, comment, link) VALUES
+('Ali', 'Hello', 'http://example.com'),
+('Ahmed', 'Good book', 'http://example.org');
+
+
+CREATE TABLE books (
+    name VARCHAR(255),
+    auther VARCHAR(255),
+    story TEXT
+);
+
+
+INSERT INTO books (name, auther, story) VALUES
+('Bug Book', 'Author SomeOne', 'Any system has bugs in it.'),
+('Bug Book 2', 'Author NoName', 'The same thing in the first book');
+
+
+CREATE TABLE contact (
+    name VARCHAR(255),
+    email VARCHAR(255),
+    message TEXT,
+    user_agent VARCHAR(255)
+);
+
+CREATE TABLE users (
+    username VARCHAR(255),
+    pass VARCHAR(255)
+);
+
+INSERT INTO users (username, pass) VALUES
+('user', 'password');
+
+CREATE TABLE users_csrf (
+    username VARCHAR(255),
+    email VARCHAR(255),
+    password VARCHAR(255)
+);
+
+INSERT INTO users_csrf (username, email, password) VALUES
+('user', 'user@example.com', 'password');
+
+--------------------------------------------------------------------
