@@ -1,6 +1,9 @@
 
 Copy The labs folder to C:\xampp\htdocs
+----------------------------------------------------------------------
 
+Start Apache
+Start MySQL
 
 ----------------------------------------------------------------------
 open Shell from XAMPP program
@@ -62,5 +65,3 @@ CREATE TABLE users_csrf (
 
 INSERT INTO users_csrf (username, email, password) VALUES
 ('user', 'user@example.com', 'password');
-
---------------------------------------------------------------------
